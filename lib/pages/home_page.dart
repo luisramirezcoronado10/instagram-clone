@@ -93,7 +93,7 @@ class HomePage extends StatelessWidget {
 
   Widget posts() {
     return Container(
-      height: 540,
+      height: 496,
       child: ListView(
         children: [
           // stories(),
