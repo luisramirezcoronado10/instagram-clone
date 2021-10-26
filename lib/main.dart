@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Instagram Clone',
       home: Scaffold(
-        body: SearchPage(),
+        body: StorePage(),
         bottomNavigationBar: BottomNavigationBar(
           // type: se usa para cuando son más de 3 items
           type: BottomNavigationBarType.fixed,
