@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_feather_icons/flutter_feather_icons.dart';
+import 'package:instagram/widgets/image_result.dart';
 
 class SearchPage extends StatelessWidget {
   const SearchPage({Key key}) : super(key: key);
@@ -62,39 +63,70 @@ class SearchPage extends StatelessWidget {
           mainAxisSpacing: 2,
         ),
         children: [
-          images(),
-          images(),
-          images(),
-          images(),
-          images(),
-          images(),
-          images(),
-          images(),
-          images(),
-          images(),
-          images(),
-          images(),
-          images(),
-          images(),
-          images(),
-          images(),
-          images(),
-          images(),
-          images(),
-          images(),
-          images(),
+          ImageResult(
+            imageResult: AssetImage('assets/images/image_result_1.png'),
+          ),
+          ImageResult(
+            imageResult: AssetImage('assets/images/image_result_2.png'),
+          ),
+          ImageResult(
+            imageResult: AssetImage('assets/images/image_result_3.png'),
+          ),
+          ImageResult(
+            imageResult: AssetImage('assets/images/image_result_4.png'),
+          ),
+          ImageResult(
+            imageResult: AssetImage('assets/images/image_result_5.png'),
+          ),
+          ImageResult(
+            imageResult: AssetImage('assets/images/image_result_6.png'),
+          ),
+          ImageResult(
+            imageResult: AssetImage('assets/images/image_result_7.png'),
+          ),
+          ImageResult(
+            imageResult: AssetImage('assets/images/image_result_8.png'),
+          ),
+          ImageResult(
+            imageResult: AssetImage('assets/images/image_result_9.png'),
+          ),
+          ImageResult(
+            imageResult: AssetImage('assets/images/image_result_10.png'),
+          ),
+          ImageResult(
+            imageResult: AssetImage('assets/images/image_result_11.png'),
+          ),
+          ImageResult(
+            imageResult: AssetImage('assets/images/image_result_12.png'),
+          ),
+          ImageResult(
+            imageResult: AssetImage('assets/images/image_result_13.png'),
+          ),
+          ImageResult(
+            imageResult: AssetImage('assets/images/image_result_14.png'),
+          ),
+          ImageResult(
+            imageResult: AssetImage('assets/images/image_result_15.png'),
+          ),
+          ImageResult(
+            imageResult: AssetImage('assets/images/image_result_16.png'),
+          ),
+          ImageResult(
+            imageResult: AssetImage('assets/images/image_result_17.png'),
+          ),
+          ImageResult(
+            imageResult: AssetImage('assets/images/image_result_18.png'),
+          ),
+          ImageResult(
+            imageResult: AssetImage('assets/images/image_result_19.png'),
+          ),
+          ImageResult(
+            imageResult: AssetImage('assets/images/image_result_20.png'),
+          ),
+          ImageResult(
+            imageResult: AssetImage('assets/images/image_result_21.png'),
+          ),
         ],
-      ),
-    );
-  }
-
-  Widget images() {
-    return Container(
-      decoration: BoxDecoration(
-        image: DecorationImage(
-          image: AssetImage('assets/images/post_1.png'),
-          fit: BoxFit.cover,
-        ),
       ),
     );
   }
