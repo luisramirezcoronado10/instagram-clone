@@ -63,27 +63,27 @@ class HomePage extends StatelessWidget {
         scrollDirection: Axis.horizontal,
         children: [
           Storie(
-            imageAvatar: AssetImage('assets/images/avatar_1.png'),
+            imageAvatar: AssetImage('assets/images/avatars/avatar_1.png'),
             nameAvatar: 'Tu historia',
           ),
           SizedBox(width: 15),
           Storie(
-            imageAvatar: AssetImage('assets/images/avatar_2.png'),
+            imageAvatar: AssetImage('assets/images/avatars/avatar_2.png'),
             nameAvatar: 'ashtalledo',
           ),
           SizedBox(width: 15),
           Storie(
-            imageAvatar: AssetImage('assets/images/avatar_3.png'),
+            imageAvatar: AssetImage('assets/images/avatars/avatar_3.png'),
             nameAvatar: 'aluxstoreofi...',
           ),
           SizedBox(width: 15),
           Storie(
-            imageAvatar: AssetImage('assets/images/avatar_4.png'),
+            imageAvatar: AssetImage('assets/images/avatars/avatar_4.png'),
             nameAvatar: 'perlacamayo',
           ),
           SizedBox(width: 15),
           Storie(
-            imageAvatar: AssetImage('assets/images/avatar_5.png'),
+            imageAvatar: AssetImage('assets/images/avatars/avatar_5.png'),
             nameAvatar: 'platzi',
           ),
         ],
@@ -98,23 +98,26 @@ class HomePage extends StatelessWidget {
         children: [
           // stories(),
           Post(
-            imageAvatar: AssetImage('assets/images/avatar_post_3.jpg'),
+            imageAvatar:
+                AssetImage('assets/images/avatars_posts/avatar_post_3.jpg'),
             nameCount: 'ironman',
-            imagePost: AssetImage('assets/images/post_1.png'),
+            imagePost: AssetImage('assets/images/posts/post_1.png'),
             countLikes: '1,345',
           ),
           SizedBox(height: 14),
           Post(
-            imageAvatar: AssetImage('assets/images/avatar_post_2.jpg'),
+            imageAvatar:
+                AssetImage('assets/images/avatars_posts/avatar_post_2.jpg'),
             nameCount: 'aluxstoreoficial',
-            imagePost: AssetImage('assets/images/post_2.png'),
+            imagePost: AssetImage('assets/images/posts/post_2.png'),
             countLikes: '10,000',
           ),
           SizedBox(height: 14),
           Post(
-            imageAvatar: AssetImage('assets/images/avatar_post_1.jpg'),
+            imageAvatar:
+                AssetImage('assets/images/avatars_posts/avatar_post_1.jpg'),
             nameCount: 'andheuris',
-            imagePost: AssetImage('assets/images/post_3.png'),
+            imagePost: AssetImage('assets/images/posts/post_3.png'),
             countLikes: '500',
           ),
           SizedBox(height: 14),

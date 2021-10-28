@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 import 'package:flutter_feather_icons/flutter_feather_icons.dart';
+import 'package:instagram/widgets/filter.dart';
+import 'package:instagram/widgets/image_result.dart';
 
 class StorePage extends StatelessWidget {
   const StorePage({Key key}) : super(key: key);
@@ -9,11 +12,12 @@ class StorePage extends StatelessWidget {
     return SafeArea(
       child: Scaffold(
         body: Container(
-          child: Stack(
+          child: Column(
             children: [
               navBar(),
               search(),
               filters(),
+              grid(),
             ],
           ),
         ),
@@ -42,11 +46,12 @@ class StorePage extends StatelessWidget {
 
   Widget search() {
     return Container(
-      margin: const EdgeInsets.only(top: 50),
+      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
       child: Container(
-        padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 12),
+        height: 50,
         child: TextField(
           decoration: InputDecoration(
+              contentPadding: const EdgeInsets.all(0),
               hintText: 'Buscar',
               border: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(10),
@@ -69,26 +74,70 @@ class StorePage extends StatelessWidget {
 
   Widget filters() {
     return Container(
-      margin: const EdgeInsets.only(top: 130),
-      child: Container(
-        height: 40,
-        width: 100,
-        decoration: BoxDecoration(
-          // color: Colors.grey,
-          borderRadius: BorderRadius.circular(10),
-          border: Border.all(color: Colors.grey[350]),
-        ),
-        child: Center(
-          child: Text(
-            'Tiendas',
-            style: TextStyle(
-              fontWeight: FontWeight.bold,
-            ),
-          ),
-        ),
+      height: 35,
+      child: ListView(
+        scrollDirection: Axis.horizontal,
+        children: [
+          Filter(title: 'Tiendas'),
+          SizedBox(width: 5),
+          Filter(title: 'Videos'),
+          SizedBox(width: 5),
+          Filter(title: 'Sugerencias de editores'),
+          SizedBox(width: 5),
+          Filter(title: 'Colecciones'),
+          SizedBox(width: 5),
+          Filter(title: 'Guias'),
+        ],
       ),
     );
   }
 
-  Widget grid() {}
+  Widget grid() {
+    return Expanded(
+      child: Container(
+        padding: const EdgeInsets.only(top: 12),
+        child: GridView(
+          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: 2,
+            crossAxisSpacing: 2,
+            mainAxisSpacing: 2,
+          ),
+          children: [
+            ImageResult(
+              imageResult: AssetImage(
+                  'assets/images/images_results/image_result_22.png'),
+            ),
+            ImageResult(
+              imageResult: AssetImage(
+                  'assets/images/images_results/image_result_23.png'),
+            ),
+            ImageResult(
+              imageResult: AssetImage(
+                  'assets/images/images_results/image_result_24.png'),
+            ),
+            ImageResult(
+              imageResult: AssetImage(
+                  'assets/images/images_results/image_result_25.png'),
+            ),
+            ImageResult(
+              imageResult: AssetImage(
+                  'assets/images/images_results/image_result_26.png'),
+            ),
+            ImageResult(
+              imageResult: AssetImage(
+                  'assets/images/images_results/image_result_27.png'),
+            ),
+            ImageResult(
+              imageResult: AssetImage(
+                  'assets/images/images_results/image_result_28.png'),
+            ),
+            ImageResult(
+              imageResult: AssetImage(
+                  'assets/images/images_results/image_result_29.png'),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
 }
