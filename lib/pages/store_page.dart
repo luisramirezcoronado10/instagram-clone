@@ -11,15 +11,13 @@ class StorePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        body: Container(
-          child: Column(
-            children: [
-              navBar(),
-              search(),
-              filters(),
-              grid(),
-            ],
-          ),
+        body: Column(
+          children: [
+            navBar(),
+            search(),
+            filters(),
+            grid(),
+          ],
         ),
       ),
     );
