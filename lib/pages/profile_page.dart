@@ -10,9 +10,12 @@ class ProfilePage extends StatelessWidget {
     return SafeArea(
       child: Scaffold(
         body: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             navbar(),
             dataProfile(),
+            descriptionProfile(),
+            bottomEditPerfil(),
           ],
         ),
       ),
@@ -65,5 +68,50 @@ class ProfilePage extends StatelessWidget {
     );
   }
 
-  Widget descriptionProfile() {}
+  Widget descriptionProfile() {
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text('Luis G. Ramirez Coronado',
+              style: TextStyle(fontWeight: FontWeight.bold)),
+          Text('Enginner and Entrepreneur'),
+          Text('UI Designer my work @luisramirezdesign'),
+        ],
+      ),
+    );
+  }
+
+  Widget bottomEditPerfil() {
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
+      child: Row(
+        children: [
+          Container(
+            padding:
+                const EdgeInsets.only(left: 105, right: 105, top: 8, bottom: 8),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(5),
+              border: Border.all(color: Colors.grey[350]),
+            ),
+            child: Text(
+              'Editar perfil',
+              style: TextStyle(fontWeight: FontWeight.bold),
+            ),
+          ),
+          SizedBox(width: 10),
+          Container(
+            padding:
+                const EdgeInsets.only(left: 10, right: 10, top: 8, bottom: 8),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(5),
+              border: Border.all(color: Colors.grey[350]),
+            ),
+            child: Icon(FeatherIcons.chevronDown, size: 16),
+          ),
+        ],
+      ),
+    );
+  }
 }
