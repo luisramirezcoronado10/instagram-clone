@@ -3,8 +3,10 @@ import 'package:flutter/material.dart';
 class Storie extends StatelessWidget {
   final String nameAvatar;
   final AssetImage imageAvatar;
+  final Color colorMain;
 
-  const Storie({Key key, this.nameAvatar, this.imageAvatar}) : super(key: key);
+  const Storie({Key key, this.nameAvatar, this.imageAvatar, this.colorMain})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -12,7 +14,8 @@ class Storie extends StatelessWidget {
       children: [
         CircleAvatar(
           radius: 36,
-          backgroundColor: Colors.purple,
+          // backgroundColor: Colors.purple,
+          backgroundColor: colorMain,
           child: CircleAvatar(
             radius: 33,
             backgroundColor: Colors.white,

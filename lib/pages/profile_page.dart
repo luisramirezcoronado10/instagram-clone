@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_feather_icons/flutter_feather_icons.dart';
 import 'package:instagram/widgets/numbers_profile.dart';
+import 'package:instagram/widgets/storie.dart';
 
 class ProfilePage extends StatelessWidget {
   const ProfilePage({Key key}) : super(key: key);
@@ -16,6 +17,7 @@ class ProfilePage extends StatelessWidget {
             dataProfile(),
             descriptionProfile(),
             bottomEditPerfil(),
+            myStories(),
           ],
         ),
       ),
@@ -109,6 +111,52 @@ class ProfilePage extends StatelessWidget {
               border: Border.all(color: Colors.grey[350]),
             ),
             child: Icon(FeatherIcons.chevronDown, size: 16),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget myStories() {
+    return Container(
+      height: 100,
+      child: ListView(
+        scrollDirection: Axis.horizontal,
+        children: [
+          Storie(
+            nameAvatar: 'Madrid',
+            imageAvatar: AssetImage('assets/images/avatars/avatar_1.png'),
+            colorMain: Colors.grey[350],
+          ),
+          SizedBox(width: 20),
+          Storie(
+            nameAvatar: 'Madrid',
+            imageAvatar: AssetImage('assets/images/avatars/avatar_1.png'),
+            colorMain: Colors.grey[350],
+          ),
+          SizedBox(width: 20),
+          Storie(
+            nameAvatar: 'Madrid',
+            imageAvatar: AssetImage('assets/images/avatars/avatar_1.png'),
+            colorMain: Colors.grey[350],
+          ),
+          SizedBox(width: 20),
+          Storie(
+            nameAvatar: 'Madrid',
+            imageAvatar: AssetImage('assets/images/avatars/avatar_1.png'),
+            colorMain: Colors.grey[350],
+          ),
+          SizedBox(width: 20),
+          Storie(
+            nameAvatar: 'Madrid',
+            imageAvatar: AssetImage('assets/images/avatars/avatar_1.png'),
+            colorMain: Colors.grey[350],
+          ),
+          SizedBox(width: 20),
+          Storie(
+            nameAvatar: 'Madrid',
+            imageAvatar: AssetImage('assets/images/avatars/avatar_1.png'),
+            colorMain: Colors.grey[350],
           ),
         ],
       ),

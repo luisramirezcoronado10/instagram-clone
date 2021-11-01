@@ -65,26 +65,31 @@ class HomePage extends StatelessWidget {
           Storie(
             imageAvatar: AssetImage('assets/images/avatars/avatar_1.png'),
             nameAvatar: 'Tu historia',
+            colorMain: Colors.purple,
           ),
           SizedBox(width: 15),
           Storie(
             imageAvatar: AssetImage('assets/images/avatars/avatar_2.png'),
             nameAvatar: 'ashtalledo',
+            colorMain: Colors.purple,
           ),
           SizedBox(width: 15),
           Storie(
             imageAvatar: AssetImage('assets/images/avatars/avatar_3.png'),
             nameAvatar: 'aluxstoreofi...',
+            colorMain: Colors.purple,
           ),
           SizedBox(width: 15),
           Storie(
             imageAvatar: AssetImage('assets/images/avatars/avatar_4.png'),
             nameAvatar: 'perlacamayo',
+            colorMain: Colors.purple,
           ),
           SizedBox(width: 15),
           Storie(
             imageAvatar: AssetImage('assets/images/avatars/avatar_5.png'),
             nameAvatar: 'platzi',
+            colorMain: Colors.purple,
           ),
         ],
       ),
