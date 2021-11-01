@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_feather_icons/flutter_feather_icons.dart';
+import 'package:instagram/widgets/new_storie.dart';
 import 'package:instagram/widgets/numbers_profile.dart';
 import 'package:instagram/widgets/storie.dart';
 
@@ -124,7 +125,7 @@ class ProfilePage extends StatelessWidget {
         scrollDirection: Axis.horizontal,
         children: [
           Storie(
-            nameAvatar: 'Madrid',
+            nameAvatar: 'Viviate',
             imageAvatar: AssetImage('assets/images/avatars/avatar_1.png'),
             colorMain: Colors.grey[350],
           ),
@@ -136,28 +137,24 @@ class ProfilePage extends StatelessWidget {
           ),
           SizedBox(width: 20),
           Storie(
-            nameAvatar: 'Madrid',
+            nameAvatar: 'Piura',
             imageAvatar: AssetImage('assets/images/avatars/avatar_1.png'),
             colorMain: Colors.grey[350],
           ),
           SizedBox(width: 20),
           Storie(
-            nameAvatar: 'Madrid',
+            nameAvatar: 'Santiago Bernabeu',
             imageAvatar: AssetImage('assets/images/avatars/avatar_1.png'),
             colorMain: Colors.grey[350],
           ),
           SizedBox(width: 20),
           Storie(
-            nameAvatar: 'Madrid',
+            nameAvatar: 'ALUX',
             imageAvatar: AssetImage('assets/images/avatars/avatar_1.png'),
             colorMain: Colors.grey[350],
           ),
           SizedBox(width: 20),
-          Storie(
-            nameAvatar: 'Madrid',
-            imageAvatar: AssetImage('assets/images/avatars/avatar_1.png'),
-            colorMain: Colors.grey[350],
-          ),
+          NewStorie(),
         ],
       ),
     );
