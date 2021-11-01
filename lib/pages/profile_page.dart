@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_feather_icons/flutter_feather_icons.dart';
+import 'package:instagram/widgets/image_result.dart';
 import 'package:instagram/widgets/new_storie.dart';
 import 'package:instagram/widgets/numbers_profile.dart';
 import 'package:instagram/widgets/storie.dart';
@@ -19,6 +20,9 @@ class ProfilePage extends StatelessWidget {
             descriptionProfile(),
             bottomEditPerfil(),
             myStories(),
+            SizedBox(height: 20),
+            tabs(),
+            grid(),
           ],
         ),
       ),
@@ -155,6 +159,73 @@ class ProfilePage extends StatelessWidget {
           ),
           SizedBox(width: 20),
           NewStorie(),
+        ],
+      ),
+    );
+  }
+
+  Widget tabs() {
+    return Container(
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        children: [
+          Expanded(
+            child: Column(
+              children: [
+                Icon(FeatherIcons.grid),
+                Divider(color: Colors.black),
+              ],
+            ),
+          ),
+          Expanded(
+            child: Column(
+              children: [
+                Icon(FeatherIcons.users, color: Colors.black38),
+                Divider(color: Colors.white),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget grid() {
+    return Expanded(
+      child: GridView(
+        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisCount: 3,
+          crossAxisSpacing: 2,
+          mainAxisSpacing: 2,
+        ),
+        children: [
+          ImageResult(
+            imageResult: AssetImage('assets/images/posts/post_1.png'),
+          ),
+          ImageResult(
+            imageResult: AssetImage('assets/images/posts/post_1.png'),
+          ),
+          ImageResult(
+            imageResult: AssetImage('assets/images/posts/post_1.png'),
+          ),
+          ImageResult(
+            imageResult: AssetImage('assets/images/posts/post_1.png'),
+          ),
+          ImageResult(
+            imageResult: AssetImage('assets/images/posts/post_1.png'),
+          ),
+          ImageResult(
+            imageResult: AssetImage('assets/images/posts/post_1.png'),
+          ),
+          ImageResult(
+            imageResult: AssetImage('assets/images/posts/post_1.png'),
+          ),
+          ImageResult(
+            imageResult: AssetImage('assets/images/posts/post_1.png'),
+          ),
+          ImageResult(
+            imageResult: AssetImage('assets/images/posts/post_1.png'),
+          ),
         ],
       ),
     );
