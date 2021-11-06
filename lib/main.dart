@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_feather_icons/flutter_feather_icons.dart';
 import 'package:instagram/pages/home_page.dart';
 import 'package:instagram/pages/profile_page.dart';
+import 'package:instagram/pages/reels_page.dart';
 import 'package:instagram/pages/search_page.dart';
 import 'package:instagram/pages/store_page.dart';
 
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Instagram Clone',
       home: Scaffold(
-        body: ProfilePage(),
+        body: ReelsPage(),
         bottomNavigationBar: BottomNavigationBar(
           // type: se usa para cuando son más de 3 items
           type: BottomNavigationBarType.fixed,

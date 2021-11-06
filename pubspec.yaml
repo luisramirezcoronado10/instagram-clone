@@ -52,6 +52,7 @@ flutter:
     - assets/images/posts/
     - assets/images/avatars_posts/
     - assets/images/images_results/
+    - assets/images/reels/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
