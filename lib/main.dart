@@ -18,66 +18,12 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  int _selectedIndex = 0;
-  List<Widget> pages = [
-    HomePage(),
-    SearchPage(),
-    ReelsPage(),
-    StorePage(),
-    ProfilePage(),
-  ];
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Instagram Clone',
       debugShowCheckedModeBanner: false,
       home: RunPage(),
-      // home: Scaffold(
-      //   body: HomePage(),
-      //   bottomNavigationBar: Row(
-      //     children: [
-      //       customBottomNavigationItem(),
-      //     ],
-      //   ),
-      // bottomNavigationBar: BottomNavigationBar(
-      //   // type: se usa para cuando son más de 3 items
-      //   type: BottomNavigationBarType.fixed,
-      //   currentIndex: 0,
-      //   items: [
-      //     BottomNavigationBarItem(
-      //       icon: Icon(FeatherIcons.home),
-      //       label: 'home',
-      //     ),
-      //     BottomNavigationBarItem(
-      //       icon: Icon(FeatherIcons.search),
-      //       label: 'search',
-      //     ),
-      //     BottomNavigationBarItem(
-      //       icon: Icon(FeatherIcons.video),
-      //       label: 'reels',
-      //     ),
-      //     BottomNavigationBarItem(
-      //       icon: Icon(FeatherIcons.shoppingBag),
-      //       label: 'bag',
-      //     ),
-      //     BottomNavigationBarItem(
-      //       icon: Icon(FeatherIcons.user),
-      //       label: 'perfil',
-      //     ),
-      //   ],
-      // ),
-      //   ),
-    );
-  }
-
-  Widget customBottomNavigationItem() {
-    return Container(
-      height: 57,
-      color: Colors.amber,
-      width: MediaQuery.of(context).size.width,
-      // width: 100,
-      child: Icon(FeatherIcons.home),
     );
   }
 }
